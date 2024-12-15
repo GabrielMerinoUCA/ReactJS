@@ -1,13 +1,15 @@
 import './App.css';
+import Navbar from "./Navbar";
+import Home from "./Home";
 
 function App() {
-  const title = "Welcome to my blog";
   let likes = 50;
   const link = "https://github.com/GabrielMerinoUCA/ReactJS";
   return (
     <div className="App">
+      <Navbar/>
       <div className="content">
-        <h1>{title}</h1>
+        <Home/>
         <p>Liked {likes} times</p>
         <p>{"Hello there"}</p>
         <a href={link}>repo</a>
