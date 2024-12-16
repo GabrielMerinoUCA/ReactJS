@@ -1,18 +1,18 @@
+import {useState} from "react"
+
 const Home = () => {
+    const [name, setName] = useState("John");
 
-    const clickHandler = (e) => {
-        console.log("Hello world", e);
+    const clickHandler = () => {
+        setName("N/a");
     }
 
-    const secondClickHandler = (name, e) => {
-        console.log("Hello " + name, e)
-    }
 
     return ( 
         <div className="home">
             <h2>Home Page</h2>
+            <p>{name}</p>
             <button onClick={clickHandler}>Click Me!</button>
-            <button onClick={(e) => secondClickHandler("name", e)}>Click Me again!</button>
         </div>
      );
 }
