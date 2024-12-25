@@ -6,7 +6,10 @@ const useFetch = (url) => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch(url)
+        const abort = new AbortController();
+
+        // Associating the abort controller with the fetch so we can stop it with such controller.
+        fetch(url, {signal: abort.signal})
         .then((res) => { // res is the response in plain data of the url fetched
             if(!res.ok) {
                 throw Error(`Response status returned "not ok"`);
@@ -18,10 +21,16 @@ const useFetch = (url) => {
             setIsPending(false);
         })
         .catch((e) => {
-            setIsPending(false);
-            setError(e.message);
+            if(e.name === "AbortError"){
+                console.log(e.message + "| FETCH ABORTED");
+            } else {
+                setIsPending(false);
+                setError(e.message);
+            }
         });
+        return () => abort.abort(); 
     }, [url]); // Since url never changes, adding it prevents this function from running for every render
+
 
     return { data, isPending, error}
 }
