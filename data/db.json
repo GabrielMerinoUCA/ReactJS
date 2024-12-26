@@ -3,19 +3,19 @@
         {
             "title": "My new website", 
             "author": "John" , 
-            "body": "lorem ipsum...", 
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis ut enim at placerat. Donec suscipit nisi eu neque ornare mollis. Vivamus hendrerit, risus vitae fermentum dignissim, augue tellus volutpat magna, sed mattis sapien felis sed metus. Nulla non lorem est. Integer ac lorem finibus, aliquet tortor id, faucibus lorem. Donec viverra mollis est non euismod. Cras eu ornare turpis. Maecenas et felis pharetra, iaculis neque eget, sodales enim. ", 
             "id": 1
         },
         {
             "title": "Welcome party", 
             "author": "Roger" , 
-            "body": "lorem ipsum...", 
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis ut enim at placerat. Donec suscipit nisi eu neque ornare mollis. Vivamus hendrerit, risus vitae fermentum dignissim, augue tellus volutpat magna, sed mattis sapien felis sed metus. Nulla non lorem est. Integer ac lorem finibus, aliquet tortor id, faucibus lorem. Donec viverra mollis est non euismod. Cras eu ornare turpis. Maecenas et felis pharetra, iaculis neque eget, sodales enim. ", 
             "id": 2
         },
         {
             "title": "Web dev tool tips", 
             "author": "Anon" , 
-            "body": "lorem ipsum...", 
+            "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis ut enim at placerat. Donec suscipit nisi eu neque ornare mollis. Vivamus hendrerit, risus vitae fermentum dignissim, augue tellus volutpat magna, sed mattis sapien felis sed metus. Nulla non lorem est. Integer ac lorem finibus, aliquet tortor id, faucibus lorem. Donec viverra mollis est non euismod. Cras eu ornare turpis. Maecenas et felis pharetra, iaculis neque eget, sodales enim. ", 
             "id": 3
         }
     ]
