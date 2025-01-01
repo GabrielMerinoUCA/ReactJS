@@ -9,7 +9,7 @@ const useFetch = (url) => {
         const abort = new AbortController();
 
         // Associating the abort controller with the fetch so we can stop it with such controller.
-        fetch(url, {signal: abort.signal})
+        fetch(url, {signal: abort.signal}) // Should probably specify GET method?
         .then((res) => { // res is the response in plain data of the url fetched
             if(!res.ok) {
                 throw Error(`Response status returned "not ok"`);
