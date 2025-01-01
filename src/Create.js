@@ -1,11 +1,13 @@
 import { useState } from "react";
-
+import { useHistory } from "react-router-dom";
 
 const Create = () => {
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
     const [author, setAuthor] = useState("");
     const [isPending, setIsPending] = useState(false);
+    // this variable holds information about the page history similarly to the back and forward button of the browser
+    const history = useHistory();
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -21,8 +23,9 @@ const Create = () => {
             console.log("new blog added");
             console.log(res);
             setIsPending(false);
-        });
-
+        }).then(()=>{
+            history.push("/");
+        });        
     }
 
     return ( 
