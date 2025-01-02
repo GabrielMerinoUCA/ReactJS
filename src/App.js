@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import Create from "./Create";
 import BlogDetails from "./BlogDetails";
+import Error404 from "./Error404";
 import {BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -25,7 +26,10 @@ function App() {
             </Route>
             <Route exact path="/blogs/:id">
               <BlogDetails />
-            </Route>  
+            </Route>
+            <Route path="*">
+              <Error404 />
+            </Route>
           </Switch>
         </div>
       </div>
