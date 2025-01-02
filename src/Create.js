@@ -21,11 +21,9 @@ const Create = () => {
             body: JSON.stringify(blog) // In order to send data as json, we have to make it a string on a specific format which the JSON object allows us to do
         }).then((res)=> {
             console.log("new blog added");
-            console.log(res);
             setIsPending(false);
-        }).then(()=>{
             history.push("/");
-        });        
+        });
     }
 
     return ( 
